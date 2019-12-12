@@ -1,7 +1,7 @@
 .PHONY:
-doc: doc/Flowchart-diagram.jpg
+doc: doc/Flowchart-diagram.png
 
-doc/Flowchart-diagram.jpg: %.jpg: doc/Flowchart-diagram.svg
+doc/Flowchart-diagram.png: %.png: doc/Flowchart-diagram.svg
 	inkscape -D -e "$*.png" "$<"
-	convert "$*.png" -flatten "$@"
-	rm -f "$*.png"
+	#convert "$*.png" -flatten "$@"
+	#rm -f "$*.png"
